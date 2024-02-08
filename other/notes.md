@@ -3,4 +3,7 @@
 # Разное - заметки
 
 ### Инструменты для запуска/сборки задач
-- [taskfile](https://taskfile.dev/) - кросплатформенная замена makefile
+- [taskfile](https://taskfile.dev/) - кроссплатформенная замена makefile
+
+### JSON
+- [./jq](https://jqlang.github.io/jq/) - потоковый преобразователь json(парсер, фильтр, преобразователь) 
