@@ -9,3 +9,4 @@
 - [Пример docker compose команд для taskfile ](docker/taskfile.md)
 ### Разное
 - [Заметки](other/notes.md)
+- [WSL в windows (Debian)](other/wsl.md)
