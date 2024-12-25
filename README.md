@@ -10,3 +10,4 @@
 ### Разное
 - [Заметки](other/notes.md)
 - [WSL в windows (Debian)](other/wsl.md)
+- [WinterCMS](other/winter.md)
