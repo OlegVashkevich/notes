@@ -8,6 +8,7 @@
 - плагин для кастомизации админки ```cyd293-backendskin``` - ломает ее, аналогов пока не нашел
 ## ide-helper
 плагин генерирует вспомогательные файлы, которые позволяют вашей IDE обеспечить точное автодополнение
+
 установка 
 ```bash
 composer require --dev flynsarmy/wn-idehelper-plugin "dev-master"
