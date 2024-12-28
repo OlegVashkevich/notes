@@ -11,3 +11,4 @@
 - [Заметки](other/notes.md)
 - [WSL в windows (Debian)](other/wsl.md)
 - [WinterCMS](other/winter.md)
+- [Composer+private github repo](other/composer_github.md)
