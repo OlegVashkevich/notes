@@ -11,13 +11,13 @@
 7. доступ к debian через команду `wsl -d Debian`
 8. проверяем и устанавливаем пакеты `sudo apt update && sudo apt upgrade -y`
 9. проверяем версию `cat /etc/os-release`
+10. ставим wget `sudo apt install wget`
 
-## Установка окружения
-1. ставим wget `sudo apt install wget`
-2. качаем новую версию go название пакета и путь смотрим тут https://go.dev/dl/ `wget путь_к_архиву`
-3. (опционально) если go стоял - сносим `rm -rf /usr/local/go`
-4. распаковываем в /usr/local - `tar -C /usr/local -xzf название_архива`
-5. что бы устанавливаемые бинарные пакеты для го работали как баш-команды - открываем файл `~/.profile` в конец добавляем:
+## Установка окружения Golang
+1. качаем новую версию go название пакета и путь смотрим тут https://go.dev/dl/ `wget путь_к_архиву`
+2. (опционально) если go стоял - сносим `rm -rf /usr/local/go`
+3. распаковываем в /usr/local - `tar -C /usr/local -xzf название_архива`
+4. что бы устанавливаемые бинарные пакеты для го работали как баш-команды - открываем файл `~/.profile` в конец добавляем:
 ```bash
 # set PATH and environment for go if it exists
 if [ -d "/usr/local/go" ] ; then
@@ -27,7 +27,7 @@ if [ -d "/usr/local/go" ] ; then
     #export GOPROXY=https://proxy.golang.org,direct
 fi
 ```
-6. обходим баг vscode (https://github.com/microsoft/vscode-remote-release/issues/6096#issuecomment-1774153528), он не запускает .profile для теминалов, изза чего очень часто отваливаются бинарные файлы go или его тузлов, и не только, для этого:
+5. обходим баг vscode (https://github.com/microsoft/vscode-remote-release/issues/6096#issuecomment-1774153528), он не запускает .profile для теминалов, изза чего очень часто отваливаются бинарные файлы go или его тузлов, и не только, для этого:
     1. в `~/.bashrc` добавляем: 
     ```bash
     if [ -f ~/.profile ]; then
@@ -44,12 +44,13 @@ fi
     #    fi
     #fi
     ```
-7. перезапускаем профиль `source $HOME/.profile`
-8. проверяем `go version`
-9. ставим git `sudo apt install git`
-10. прописываем данные для гита `git config --global user.email "you@example.com"` и `git config --global user.name "Your Name"`
-11. ставим taskfile `go install github.com/go-task/task/v3/cmd/task@latest`, после перезагружаем профиль `source $HOME/.profile`
-12. ставим temple `go install github.com/a-h/templ/cmd/templ@latest`, после перезагружаем профиль `source $HOME/.profile`
+6. перезапускаем профиль `source $HOME/.profile`
+7. проверяем `go version`
+8. ставим git `sudo apt install git`
+9. прописываем данные для гита `git config --global user.email "you@example.com"` и `git config --global user.name "Your Name"`
+10. ставим taskfile `go install github.com/go-task/task/v3/cmd/task@latest`, после перезагружаем профиль `source $HOME/.profile`
+11. ставим temple `go install github.com/a-h/templ/cmd/templ@latest`, после перезагружаем профиль `source $HOME/.profile`
+
 ### Фишки
 - открыть рабочий раздел wsl-vscode в  windows -  `explorer.exe .`
 - (не рекомендуется) создание контекстного меню для открытия папки windows в `vscode` как будто это подсистема linux(wsl):

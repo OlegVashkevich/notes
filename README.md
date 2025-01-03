@@ -1,5 +1,7 @@
 # Заметки
 
+### PHP
+- [Заметки](php/notes.md)
 ### Golang
 - [Заметки](go/notes.md)
 ### Web Components
