@@ -6,6 +6,8 @@
 
 Необходимо использовать его в проекте через `composer require {vendor}/{package-name}`
 
+## Используя Tag
+
 ### В репозитории создаем composer.json
 ```json
 {
@@ -32,4 +34,18 @@ composer config repositories.{vendor}-{package-name} git https://github.com/{ven
 все, можем использовать 
 ```bash
 composer require {vendor}/{package-name}
+```
+
+## Без Tag
+
+можно не создавать тег, но тогда надо знать ветку разработки пакета например master или main
+
+добавляем приватный репозиторий к проекту
+```bash
+composer config repositories.{vendor}-{package-name} git https://github.com/{vendor}/{package-name}.git
+```
+
+вызываем с указанем ветки
+```bash
+composer require {vendor}/{package-name}:dev-{branch}
 ```
