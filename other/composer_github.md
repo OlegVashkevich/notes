@@ -6,7 +6,7 @@
 
 Необходимо использовать его в проекте через `composer require {vendor}/{package-name}`
 
-## Используя Tag
+
 
 ### В репозитории создаем composer.json
 ```json
@@ -15,6 +15,7 @@
     "description": "",
 } 
 ```
+## Используя Tag
 
 ### Создаем Tag
 ```bash
