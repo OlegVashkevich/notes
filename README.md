@@ -14,3 +14,4 @@
 - [WSL в windows (Debian)](other/wsl.md)
 - [WinterCMS](other/winter.md)
 - [Composer+private github repo](other/composer_github.md)
+- [Локальный ИИ](other/local_ai.md)
