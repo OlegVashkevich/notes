@@ -15,3 +15,4 @@
 - [WinterCMS](other/winter.md)
 - [Composer+private github repo](other/composer_github.md)
 - [Локальный ИИ](other/local_ai.md)
+- [Нормализация грмкости музыки](other/replaygain.md)
